@@ -5,7 +5,22 @@
 
 ;;; <<< BEGIN FILL ME IN >>>
 
-(def workflow)
+(def workflow
+  [[:A :D]
+   [:B :D]
+   [:D :F]
+   [:D :G] ;; To G
+   ;; F Branch
+   [:F :J]
+   [:F :K]
+
+   [:C :E]
+   [:E :G]
+   [:E :H]
+   [:E :I]
+   [:G :L] ;; From D
+   [:H :L]
+   [:I :L]])
 
 ;;; <<< END FILL ME IN >>>
 
